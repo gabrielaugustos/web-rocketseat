@@ -1,6 +1,6 @@
 function toggleMode() {
+  //document é toda a página HTML. Acesso meu html através do documentElement
   const html = document.documentElement
-
   // no html, na lista de classe, contém 'light'? se sim remova
   /*
   if (html.classList.contains("light")) {

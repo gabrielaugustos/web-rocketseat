@@ -11,7 +11,7 @@
     --surface-color: rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(/assets/MoonStars.svg);
+    --switch-bg-url: url(assets/MoonStars.svg);
 }
 
 .light {
@@ -39,6 +39,8 @@ body {
 
     background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
     ****/
+
+    height: 100vh;
 }
 
 body * {
@@ -81,7 +83,7 @@ body * {
     width: 32px;
     height: 32px;
     background: white var(--switch-bg-url) no-repeat center;
-    border: 0;
+    border: 1px solid gray;
     border-radius: 50%;
 
     position: absolute;
@@ -160,10 +162,20 @@ ul li a:hover {
     background: var(--highlight-color);
 }
 
-
 /* Rodapé */
 footer {
     text-align: center;
     padding: 24px 0;
     font-size: 14px;
+}
+
+/* @media queries */
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assets/bg-desktop.jpg);
+    }
+
+    .light {
+        --bg-url: url(./assets/bg-desktop-light.jpg);
+    }
 }
